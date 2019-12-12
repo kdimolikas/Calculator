@@ -1,0 +1,144 @@
+html,body{
+	margin:0;
+	padding:0 0 0 5px;
+}
+
+ul {
+list-style-type:none;	
+margin:0;
+padding:0;
+width:252px;
+background-color:rgba(0,50,150,.5);
+}
+
+#menu-btn{
+	min-width:30px;
+	height:30px;
+	background-color:inherit;
+	border-style:none;
+	font-weight:bold;
+	color:white;
+}
+
+.menu-btns{
+	background-color:inherit;
+	width:100%;
+	border-style:none;
+	color:white;
+}
+
+#menu-btn:hover, .menu-btns:hover{
+	cursor:pointer;
+}
+
+#main-board{
+	display:inline-block;
+	width:220px;
+	margin-top:5px;
+	margin-right:30px;
+}
+
+#math-board {
+	display:inline-block;
+	width:220px;
+	margin-right:30px;
+}
+
+#stats-board{
+	display:inline-block;
+	width:220px;
+	margin-right:30px;
+}
+
+#dspl{
+	width:252px;
+}
+
+#expr{
+	width:inherit;
+	height:103px;
+	background-color:rgba(0,50,150,.8);
+	font-size:16px;
+	color:white;
+	font-family:Courier, monospace;
+	overflow:auto;
+}
+
+#result{
+	text-align:right;
+	background-color:rgba(0,50,100,.8);
+	width:inherit;
+	height:30px;
+	color:white;
+	font-size:18px;
+	padding:15px 0px 10px 0px;
+	font-family:Courier, monospace;
+	overflow:auto;
+}
+
+#custom-oper{
+	display:block;
+	width:inherit;
+	min-height:50px;
+	font-size:12px;
+	font-family:Courier, monospace;
+	margin-right:0;
+	box-sizing:border-box;
+	white-space:normal;
+}
+
+.calc-row{
+	width:400px;
+	height:auto;
+	margin-bottom:5px;
+}
+
+input[type="button"]{
+	min-width:60px;
+	height:50px;
+	border:none;
+	font-size:.9em;
+	padding:0px 2px 0px 2px;
+}
+
+input[name="clear"]{
+	background-color:orange;
+	color:white;
+}
+
+input[name="del"]{
+	background-color:red;
+	color:white;
+}
+
+#m-btn-menu{
+	margin-top:80px;
+	padding:5px;
+	border:1px solid buttonface;
+	border-radius:5px;
+	position:fixed;
+}
+
+.board-label{
+	color:blue;
+	border:1px buttonface solid;
+	padding:5px 5px;
+	border-radius:5px;
+	z-index:-1;
+}
+
+#tooltip{
+	position:fixed;
+	min-width:300px;
+	max-height:100px;
+	padding:5px;
+	background-color:rgba(100,100,100,.4);
+	border-radius:5px;
+	bottom:0;
+	left:0;
+	display:none;
+	color:white;
+	font-size:1em;
+	overflow:auto;
+	font-family:Courier, monospace;
+}

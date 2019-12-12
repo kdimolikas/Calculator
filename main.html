@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+
+<body onLoad = init()>
+	
+	<div id = "main-menu">
+		<ul>
+			<li>
+				<button id="menu-btn">M</button>
+			</li>
+			<ul id="advanced-fts">
+				<li>
+					<button class = "menu-btns" id = "math-btn">Hide Math functions</button>
+				</li>
+				<li>
+					<button class = "menu-btns" id = "stats-btn">Hide Statistics functions</button>
+				</li>
+			</ul>
+		</ul>
+	</div>
+	
+	<div id = "dspl">
+	<div id = "expr"></div>
+	
+	<div id = "result"></div>
+	
+	<input id = "custom-oper" type = "text" placeholder = "Paste here your data...">
+	</div>
+	
+	<form action="" method="post" id="main-board">
+		<div class="calc-row">
+			<input type="button" name="clear" value="C">
+			<input type="button" name="del" value="DEL">
+			<input type="button" name="comma" value=",">
+			<input class = "operators" type="button" name="mod" value="%">
+		</div>
+		<div class="calc-row">
+			<input type="button" name="9" value="9">
+			<input type="button" name="8" value="8">
+			<input type="button" name="7" value="7">
+			<input class = "operators" type="button" name="div" value="/">
+		</div>
+		<div class="calc-row">
+			<input type="button" name="6" value="6">
+			<input type="button" name="5" value="5">
+			<input type="button" name="4" value="4">
+			<input class = "operators" type="button" name="multi" value="*">
+		</div>
+		<div class="calc-row">
+			<input type="button" name="3" value="3">
+			<input type="button" name="2" value="2">
+			<input type="button" name="1" value="1">
+			<input class = "operators" type="button" name="sub" value="-">
+		</div>
+		<div class="calc-row">
+			<input type="button" name="dot" value=".">
+			<input type="button" name="0" value="0">
+			<input type="button" name="equal" value="=">
+			<input class = "operators" type="button" name="add" value="+">
+		</div>
+	</form>
+	
+	<form action="" method="post" id="math-board">
+		<span class="board-label">Math</span>
+		<div class="calc-row">
+			<input class = "m-btn" type="button" name="abs" value="abs">
+			<input class = "m-btn" type="button" name="log" value="log">
+			<input class = "m-btn" type="button" name="pow" value="pow">
+			<input class = "m-btn" type="button" name="exp" value="exp">
+		</div>
+		<div class="calc-row">
+			<input class ="m-btn" type="button" name="min" value="min">
+			<input class ="m-btn" type="button" name="max" value="max">
+			<input class ="m-btn" type="button" name="sqrt" value="sqrt">
+			<input class ="m-btn" type="button" name="cbrt" value="cbrt">
+		</div>
+		<div class="calc-row">
+			<input class = "m-btn" type="button" name="cos" value="cos">
+			<input class = "m-btn" type="button" name="sin" value="sin">
+			<input class = "m-btn" type="button" name="tan" value="tan">
+			<input class = "m-btn" type="button" name="acos" value="acos">
+		</div>
+		<div class="calc-row">
+			<input class = "m-btn" type="button" name="asin" value="asin">
+			<input class = "m-btn" type="button" name="atan" value="atan">
+			<input class = "m-btn" type="button" name="sinh" value="sinh">
+			<input class = "m-btn" type="button" name="cosh" value="cosh">
+		</div>
+		<div class="calc-row">
+			<input class = "m-btn" type="button" name="round" value="round">
+			<input class = "m-btn" type="button" name="floor" value="floor">
+			<input class = "m-btn" type="button" name="ceil" value="ceil">
+			<input class = "m-btn" type="button" name="trunc" value="trunc">
+		</div>
+	</form>
+	
+	<div>
+		<form action="" method="post" id="stats-board">
+			<span class="board-label">Stats</span>
+			<div class="calc-row">
+				<input class = "s-btn" type="button" name="tot" value="Σ">
+				<input class = "s-btn" type="button" name="avg" value="Avg">
+				<input class = "s-btn" type="button" name="var" value="Var">
+				<input type="button" name="gt" value=">">
+
+			</div>
+			<div class="calc-row">
+				<input class = "s-btn" type="button" name="cnt" value="Count">
+				<input class = "s-btn" type="button" name="med" value="Median">
+				<input class = "s-btn" type="button" name="cntIf" value="CountIf">
+				<input type="button" name="lt" value="<">
+			</div>
+			<div class="calc-row">
+				<input class = "s-btn" type="button" name="stDev" value="StDev">
+				<input class = "s-btn" type="button" name="freq" value="Freq">
+				<input class = "s-btn" type="button" name="kLrg" value="k-Large">
+				<input type="button" name="ge" value=">=">
+			</div>
+			<div class="calc-row">
+				<input type="button" name="eq" value="==">
+				<input type="button" name="ne" value="!=">
+				<input type="button" name="qm" value=";">
+				<input type="button" name="le" value="<=">
+			</div>
+		</form>
+	</div>
+	
+	<div id = "tooltip"></div>
+	
+	<script src="./main.js" charset="utf-8"></script>
+
+</body>
+</html>
